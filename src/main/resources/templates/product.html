@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/cart.css}" />
+</head>
+
+<body>
+<div th:object="${product}">
+    <h1 th:text="${name}"></h1>
+    <p th:text="${description}"></p>
+    <p>Giá: <span th:text="${productPriceOut}"></span> đồng</p>
+    <p>Số lượng: <span th:text="${quantity}"></span></p>
+    <img th:src="${productImage}" th:alt="${name}" width="200">
+    <p>Sale: <span th:text="${discount}"></span> %</p>
+
+    <a href="/path/to/cart" class="cart-icon">
+        <span class="cart-count">0</span>
+    </a>
+</div>
+</body>
+
+</html>

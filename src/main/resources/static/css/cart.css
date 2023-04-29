@@ -1,0 +1,64 @@
+/* Thiết lập font chữ và màu chữ cho tiêu đề trang */
+h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Thiết lập font chữ và màu chữ cho các cột trong bảng giỏ hàng */
+th, td {
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+/* Thiết lập màu nền cho phần tiêu đề bảng giỏ hàng */
+thead {
+    background-color: #f2f2f2;
+}
+
+/* Thiết lập màu nền cho các hàng chẵn trong bảng giỏ hàng */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Thiết lập màu nền cho các hàng lẻ trong bảng giỏ hàng */
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Thiết lập màu nền cho phần chân bảng giỏ hàng */
+tfoot {
+    background-color: #f2f2f2;
+}
+
+/* Thiết lập kiểu đường viền cho bảng giỏ hàng */
+table {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Thiết lập kiểu đường viền cho các cột trong bảng giỏ hàng */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Thiết lập kiểu đường viền cho nút thanh toán */
+.btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Thiết lập kiểu đường viền khi rê chuột vào nút thanh toán */
+.btn:hover {
+    background-color: #3e8e41;
+}
